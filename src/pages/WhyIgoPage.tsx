@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 import SuccessStoriesPage from "./SuccessStoriesPage";
 import { 
   Award, Sprout, Lightbulb, ShieldCheck, 
   CircleDollarSign, Leaf, Handshake, Headset,
-  Users, MapPin, Briefcase, Box, Calendar
+  Users, Briefcase, Box
 } from "lucide-react";
 
 const WHY_IGO_CARDS = [

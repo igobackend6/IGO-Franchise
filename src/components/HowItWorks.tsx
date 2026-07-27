@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 import { 
   ClipboardCheck, FileSignature, HandCoins, ShoppingCart, 
   ShieldCheck, Sprout, UserCog, ShoppingBag, TrendingUp, Headset,
-  Leaf, User, AlertCircle, ArrowRight, Handshake
+  Leaf, User, ArrowRight, Handshake
 } from "lucide-react";
 
 export default function HowItWorks() {
