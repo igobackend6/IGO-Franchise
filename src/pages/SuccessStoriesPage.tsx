@@ -97,7 +97,7 @@ const STATS = [
 
 export default function SuccessStoriesPage() {
   return (
-    <div className="ss-page">
+    <div>
       {/* ========== HERO ========== */}
       <section className="ss-hero">
         <div className="wrap">

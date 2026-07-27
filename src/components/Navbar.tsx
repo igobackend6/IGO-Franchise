@@ -7,8 +7,9 @@ import logo from "../assets/logo.jpg";
 const LINKS = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Us" },
-  { to: "/franchise-models", label: "Franchise Models" },
-  { to: "/success-stories", label: "Success Stories" },
+  { to: "/franchise-models", label: "Investment Plans" },
+  { to: "/how-it-works", label: "How It Works" },
+  { to: "/why-igo", label: "Why IGO" },
   { to: "/faq", label: "FAQ" },
   { to: "/contact", label: "Contact Us" },
 ];

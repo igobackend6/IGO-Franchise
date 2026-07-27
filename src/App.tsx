@@ -14,6 +14,7 @@ import FAQPage from "./pages/FAQPage";
 import ContactPage from "./pages/ContactPage";
 import ApplyPage from "./pages/ApplyPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import HowItWorksPage from "./pages/HowItWorksPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/franchise-models" element={<FranchiseModelsPage />} />
           <Route path="/success-stories" element={<SuccessStoriesPage />} />
+          <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/opportunities" element={<OpportunitiesPage />} />
           <Route path="/why-igo" element={<WhyIgoPage />} />
           <Route path="/process" element={<ProcessPage />} />

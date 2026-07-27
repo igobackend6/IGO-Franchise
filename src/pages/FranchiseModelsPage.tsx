@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
+import { Sprout, Leaf, TrendingUp, Diamond, ShieldCheck, ShoppingCart, FileText, IndianRupee, Headset, Info } from "lucide-react";
 
 /* ── SVG icon helpers ── */
+const LeafTitleIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+    <path d="M12 2C7.58 2 4 5.58 4 10c0 4.42 3.58 8 8 8s8-3.58 8-8c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" />
+    <path d="M12 6c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+  </svg>
+);
+
 const CheckIcon = () => (
   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="20 6 9 17 4 12" />
@@ -160,11 +168,15 @@ export default function FranchiseModelsPage() {
   return (
     <div className="fm-page">
       {/* ========== HEADER ========== */}
-      <section className="fm-header">
-        <div className="wrap">
+      <section className="fm-header" style={{
+        backgroundImage: `linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.85)), url('/assets/investment-hero.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
+        <div className="wrap" style={{ position: 'relative', zIndex: 1 }}>
           <Reveal>
             <h1 className="fm-main-title">
-              Our <span className="fm-title-green">Franchise Models</span>
+              Investment <span className="fm-title-green">Plans</span>
             </h1>
             <p className="fm-main-subtitle">
               Choose the right agritech business model and start your successful journey with IGO.
@@ -174,9 +186,272 @@ export default function FranchiseModelsPage() {
         </div>
       </section>
 
+      {/* ========== INVESTMENT PLANS ========== */}
+      <section className="inv-sec">
+        <div className="wrap">
+          <Reveal>
+            <div className="inv-header">
+              <h2 className="inv-title">
+                <Leaf size={28} /> INVESTMENT PLANS <Leaf size={28} style={{transform: 'scaleX(-1)'}} />
+              </h2>
+              <p className="inv-subtitle">Choose the Right Plan for Your Agricultural Investment</p>
+              <p className="inv-desc">
+                IGO Agritech offers flexible investment plans designed to suit different financial goals.<br/>
+                All plans come with a <b>5-Year Agreement</b> and a monthly purchase requirement to stay eligible<br/>
+                for maximum benefits.
+              </p>
+            </div>
+
+            <div className="inv-cards">
+              {/* Silver Plan */}
+              <div className="inv-card silver">
+                <div className="inv-icon-wrap">
+                  <Sprout size={28} />
+                </div>
+                <div className="inv-card-name">Silver Plan</div>
+                <div className="inv-card-tag">A Smart Start for a<br/>Better Tomorrow</div>
+                
+                <div className="inv-card-list">
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><Leaf size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Investment Amount</h4>
+                      <p>₹1,00,000 &ndash; ₹2,00,000</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><FileText size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Agreement Period</h4>
+                      <p>5 Years</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><ShoppingCart size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Monthly Purchase</h4>
+                      <p>₹1,000 or more</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><IndianRupee size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Eligible Returns</h4>
+                      <p>As per the agreement terms<br/>and conditions</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><FileText size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Highlights</h4>
+                      <p>Ideal for first-time investors<br/>and long-term growth</p>
+                    </div>
+                  </div>
+                </div>
+                <button className="inv-card-btn">Choose Silver Plan</button>
+              </div>
+
+              {/* Gold Plan */}
+              <div className="inv-card gold">
+                <div className="inv-icon-wrap">
+                  <Leaf size={28} />
+                </div>
+                <div className="inv-card-name">Gold Plan</div>
+                <div className="inv-card-tag">Grow More, Earn More<br/>&nbsp;</div>
+                
+                <div className="inv-card-list">
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><Leaf size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Investment Amount</h4>
+                      <p>₹2,00,001 &ndash; ₹5,00,000</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><FileText size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Agreement Period</h4>
+                      <p>5 Years</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><ShoppingCart size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Monthly Purchase</h4>
+                      <p>₹1,000 or more</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><IndianRupee size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Eligible Returns</h4>
+                      <p>As per the agreement terms<br/>and conditions</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><FileText size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Highlights</h4>
+                      <p>Balanced plan for steady<br/>growth and better benefits</p>
+                    </div>
+                  </div>
+                </div>
+                <button className="inv-card-btn">Choose Gold Plan</button>
+              </div>
+
+              {/* Platinum Plan */}
+              <div className="inv-card platinum">
+                <div className="inv-icon-wrap">
+                  <TrendingUp size={28} />
+                </div>
+                <div className="inv-card-name">Platinum Plan</div>
+                <div className="inv-card-tag">Invest More, Achieve More<br/>&nbsp;</div>
+                
+                <div className="inv-card-list">
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><Leaf size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Investment Amount</h4>
+                      <p>₹5,00,001 &ndash; ₹10,00,000</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><FileText size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Agreement Period</h4>
+                      <p>5 Years</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><ShoppingCart size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Monthly Purchase</h4>
+                      <p>₹1,000 or more</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><IndianRupee size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Eligible Returns</h4>
+                      <p>As per the agreement terms<br/>and conditions</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><FileText size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Highlights</h4>
+                      <p>Higher investment with<br/>greater potential returns</p>
+                    </div>
+                  </div>
+                </div>
+                <button className="inv-card-btn">Choose Platinum Plan</button>
+              </div>
+
+              {/* Diamond Plan */}
+              <div className="inv-card diamond">
+                <div className="inv-icon-wrap">
+                  <Diamond size={28} />
+                </div>
+                <div className="inv-card-name">Diamond Plan</div>
+                <div className="inv-card-tag">Maximum Investment,<br/>Maximum Potential</div>
+                
+                <div className="inv-card-list">
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><Leaf size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Investment Amount</h4>
+                      <p>₹10,00,001 and above</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><FileText size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Agreement Period</h4>
+                      <p>5 Years</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><ShoppingCart size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Monthly Purchase</h4>
+                      <p>₹1,000 or more</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><IndianRupee size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Eligible Returns</h4>
+                      <p>As per the agreement terms<br/>and conditions</p>
+                    </div>
+                  </div>
+                  <div className="inv-list-item">
+                    <div className="inv-list-icon"><FileText size={18} /></div>
+                    <div className="inv-list-content">
+                      <h4>Highlights</h4>
+                      <p>Best value for maximum<br/>long-term benefits</p>
+                    </div>
+                  </div>
+                </div>
+                <button className="inv-card-btn">Choose Diamond Plan</button>
+              </div>
+            </div>
+
+            <div className="inv-features">
+              <div className="inv-feature">
+                <div className="inv-feat-icon"><ShieldCheck size={22} /></div>
+                <div className="inv-feat-text">
+                  <h5>5-Year Agreement</h5>
+                  <p>All plans are valid for<br/>5 years from the date<br/>of agreement.</p>
+                </div>
+              </div>
+              <div className="inv-feature">
+                <div className="inv-feat-icon"><ShoppingCart size={22} /></div>
+                <div className="inv-feat-text">
+                  <h5>Monthly Purchase</h5>
+                  <p>Purchase IGO products<br/>worth ₹1,000 or more<br/>every month.</p>
+                </div>
+              </div>
+              <div className="inv-feature">
+                <div className="inv-feat-icon"><FileText size={22} /></div>
+                <div className="inv-feat-text">
+                  <h5>Terms & Conditions</h5>
+                  <p>All returns and benefits<br/>are as per the agreement<br/>terms and conditions.</p>
+                </div>
+              </div>
+              <div className="inv-feature">
+                <div className="inv-feat-icon"><IndianRupee size={22} /></div>
+                <div className="inv-feat-text">
+                  <h5>Transparent Process</h5>
+                  <p>Clear terms, no hidden<br/>charges and complete<br/>transparency.</p>
+                </div>
+              </div>
+              <div className="inv-feature">
+                <div className="inv-feat-icon"><Headset size={22} /></div>
+                <div className="inv-feat-text">
+                  <h5>Dedicated Support</h5>
+                  <p>Our team is always here<br/>to assist you at every<br/>step of your journey.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="inv-note">
+              <div className="inv-note-icon">i</div>
+              <div><b>Note:</b> Missing monthly purchase may reduce the eligible returns as per agreement terms.</div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ========== FRANCHISE CARDS GRID ========== */}
       <section className="fm-cards-sec">
         <div className="wrap">
+          <Reveal>
+            <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+              <h2 className="fm-main-title" style={{ fontSize: 'clamp(28px, 4vw, 42px)', marginBottom: '10px' }}>
+                Franchise <span className="fm-title-green">Models</span>
+              </h2>
+            </div>
+          </Reveal>
           <div className="fm-cards-grid">
             {FRANCHISE_MODELS.map((model) => (
               <Reveal key={model.id} className="fm-card">
