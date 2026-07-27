@@ -53,16 +53,16 @@ export default function HomePage() {
                 <span>Brand Verticals</span>
               </div>
               <div>
-                <b><Counter target={100} suffix="+" /></b>
-                <span>Cities Covered</span>
+                <b><Counter target={2000} suffix="+" /></b>
+                <span>Clients Covered</span>
               </div>
               <div>
                 <b><Counter target={50} suffix="K+" /></b>
                 <span>Farmers Served</span>
               </div>
               <div>
-                <b><Counter target={6} /></b>
-                <span>Years of Growth</span>
+                <b><Counter target={10} suffix="+" /></b>
+                <span>Years</span>
               </div>
             </div>
           </div>

@@ -42,7 +42,7 @@ export default function ApplyPage() {
                     </div>
                     <div className="form-field">
                       <label>Phone Number</label>
-                      <input type="tel" required placeholder="+91 98765 43210" />
+                      <input type="tel" required placeholder="+91 73977 89803" />
                     </div>
                   </div>
 

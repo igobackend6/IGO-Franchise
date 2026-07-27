@@ -5,11 +5,12 @@ import { useScrolled } from "../hooks/useScrolled";
 import logo from "../assets/logo.jpg";
 
 const LINKS = [
-  { to: "/opportunities", label: "Opportunities" },
-  { to: "/why-igo", label: "Why IGO" },
-  { to: "/process", label: "Process" },
-  { to: "/investment", label: "Investment" },
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About Us" },
+  { to: "/franchise-models", label: "Franchise Models" },
+  { to: "/success-stories", label: "Success Stories" },
   { to: "/faq", label: "FAQ" },
+  { to: "/contact", label: "Contact Us" },
 ];
 
 export default function Navbar() {
@@ -34,6 +35,7 @@ export default function Navbar() {
                 <li key={link.to}>
                   <NavLink
                     to={link.to}
+                    end={link.to === "/"}
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
                     {link.label}
@@ -44,7 +46,7 @@ export default function Navbar() {
 
             <div className="nav-cta">
               <Link to="/apply" className="btn btn-gold">
-                Apply Now
+                Apply Now →
               </Link>
               <button
                 className="burger"
@@ -80,7 +82,7 @@ export default function Navbar() {
                 style={{ width: "fit-content" }}
                 onClick={() => setOpen(false)}
               >
-                Apply Now
+                Apply Now →
               </Link>
             </li>
           </ul>
